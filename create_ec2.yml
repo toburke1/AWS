@@ -12,6 +12,8 @@
       region: us-west-1
       group: insecure_all
       count: 1
+      count_tag:
+        Name: Webserver
       instance_tags:
         web: apache
         name: webserver
