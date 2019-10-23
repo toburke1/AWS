@@ -10,7 +10,7 @@
       key_name: ansible-skylight-ncal
       image: ami-00fc224d9834053d6
       region: us-west-1
-      group: default
+      group: sg-dd0ff4a4
       count: 1
       vpc_subnet_id: subnet-02b14a5a
       wait: yes
