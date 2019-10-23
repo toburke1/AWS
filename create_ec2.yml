@@ -19,9 +19,8 @@
       assign_public_ip: yes
       
   - name: set name tag
-    ec2_tag:
-      tags:
-        Name: Webserver
+    ec2_instance:
+      name: Webserver
       
   - name: wait 300 seconds, but only start chacking after 60 seconds
     wait_for_connection:
