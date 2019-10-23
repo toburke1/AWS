@@ -12,7 +12,7 @@
       region: us-west-1
       group: sg-dd0ff4a4
       count: 1
-      vpc_subnet_id: insecure_all
+      vpc_subnet_id: default
       wait: yes
       assign_public_ip: yes
       
