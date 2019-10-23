@@ -14,6 +14,8 @@
       count: 1
       instance_tags:
         web: apache
+      tags:
+        Name: webserver
       vpc_subnet_id: subnet-02b14a5a
       wait: yes
       assign_public_ip: yes
