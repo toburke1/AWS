@@ -12,11 +12,9 @@
       region: us-west-1
       group: insecure_all
       count: 1
-      count_tag:
-        Name: Webserver
       instance_tags:
         web: apache
-        Name: webserver
+        Name: "{{ webserver }}-{{ item.0 + 10 }}"
       vpc_subnet_id: subnet-02b14a5a
       wait: yes
       assign_public_ip: yes
