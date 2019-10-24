@@ -1,9 +1,9 @@
 ---
 - name: register rhel hosts
   hosts: localhost
+  ansible_become: false
   connection: local
   gather_facts: False
-  become: yes
   tasks:
   - name: Register a user with password and specific pool id
     redhat_subscription:
