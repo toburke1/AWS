@@ -1,7 +1,6 @@
 ---
 - name: register rhel hosts
   hosts: localhost
-  ansible_become: false
   connection: local
   gather_facts: False
   tasks:
