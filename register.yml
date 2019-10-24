@@ -1,0 +1,13 @@
+---
+- name: register rhel hosts
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+  - name: Register a user with password and specific pool id
+    redhat_subscription:
+      state: present
+      username: "{{ username }}"
+      password: "{{ password }}"
+      pool_ids: "{{ poolid }}"
+    
