@@ -1,7 +1,6 @@
 ---
 - name: register rhel hosts
-  hosts: localhost
-  connection: local
+  hosts: all
   gather_facts: False
   tasks:
   - name: Register a user with password and specific pool id
