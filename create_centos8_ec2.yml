@@ -8,13 +8,13 @@
     ec2:
       instance_type: t2.micro
       key_name: ansible-skylight-ncal
-      image: ami-00fc224d9834053d6
+      image: ami-0041d53caa0b55390
       region: us-west-1
       group: insecure_all
       count: "{{ count }}"
       instance_tags:
         web: apache
-        Name: webserver      
+        Name: centserv      
       vpc_subnet_id: subnet-02b14a5a
       wait: yes
       assign_public_ip: yes
