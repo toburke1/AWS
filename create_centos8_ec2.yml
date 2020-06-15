@@ -1,0 +1,27 @@
+---
+- name: Creating EC2 Image Launcher
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+  - name: Launching EC2
+    ec2:
+      instance_type: t2.micro
+      key_name: ansible-skylight-ncal
+      image: ami-0041d53caa0b55390
+      region: us-west-1
+      group: insecure_all
+      count: "{{ count }}"
+      instance_tags:
+        web: apache
+        Name: centserv      
+      vpc_subnet_id: subnet-02b14a5a
+      wait: yes
+      assign_public_ip: yes
+    register: ec2
+      
+      
+  - name: wait 300 seconds, but only start chacking after 60 seconds
+    wait_for_connection:
+      delay: 60
+      timeout: 300
