@@ -10,7 +10,7 @@
       key_name: ansible-skylight-ncal
       image: ami-0041d53caa0b55390
       region: us-west-1
-      group: insecure_all
+      group: tower_install
       count: "{{ count }}"
       instance_tags:
         web: apache
