@@ -36,7 +36,7 @@
       enabled: true
       state: started
       
-  - name: latest Apache version installed
+  - name: latest Git version installed
     yum:
       name: git
       state: latest
