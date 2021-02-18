@@ -42,5 +42,5 @@
       state: latest
       
   - name: Copy Welcome Message to WebServers
-    git: repo=https://github.com/toburke1/AWS/welcome.html dest=/var/www/html/index.html
+    git: repo=https://github.com/toburke1/AWS/welcome.html dest=/var/www/html/
   
