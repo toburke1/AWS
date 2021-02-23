@@ -9,4 +9,4 @@
     
   tasks:
   - name: Copy Welcome Message to Hosts
-    git: repo=https://github.com/toburke1/AWS/welcome.html dest=/var/www/html
+    git: repo=https://github.com/toburke1/AWS/cpwelcome.html dest=/var/www/html
