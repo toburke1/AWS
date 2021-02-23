@@ -1,5 +1,9 @@
 ---
 - name: Copy welcome message to Apache Web Servers in AWS
+  remote_user: ec2-user
+  become: true
+  become_method: sudo
+  become_user: root
   hosts: all
   gather_facts: no
     
