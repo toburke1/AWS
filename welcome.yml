@@ -1,0 +1,8 @@
+---
+- name: Copy welcome message to Apache Web Servers in AWS
+  hosts: all
+  gather_facts: no
+    
+  tasks:
+  - name: Copy Welcome Message to Hosts
+    git: repo=https://github.com/toburke1/AWS/welcome.html dest=/var/www/html
